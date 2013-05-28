@@ -112,7 +112,7 @@ usage examples.
 
 == REQUIREMENTS:
 
-  hpricot
+  nokogiri
   activesupport
 
 == INSTALL:
