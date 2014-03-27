@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.summary = "A Ruby library for interfacing with all aspects of the EVE Online MMO."
 
   s.add_runtime_dependency 'nokogiri', "~> 1"
-  s.add_runtime_dependency 'activesupport', "~> 3"
+  s.add_runtime_dependency 'activesupport', "~> 4"
   s.add_runtime_dependency 'sc-core-ext'
   
   s.add_development_dependency 'rails', ">= 0"
