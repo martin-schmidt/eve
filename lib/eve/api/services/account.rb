@@ -6,6 +6,11 @@ module Eve
           validate_credentials(:limited)
           request(:account, :characters)
         end
+
+        def apikeyinfo
+          validate_credentials(:limited)
+          request(:account, :apikeyinfo)
+        end
       end
     end
   end
