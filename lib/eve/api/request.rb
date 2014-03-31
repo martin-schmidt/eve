@@ -67,7 +67,7 @@ module Eve
 
       def default_options
         {
-          :base_uri => "https://api.eve-online.com",
+          :base_uri => "https://api.eveonline.com",
           :extension => "xml.aspx",
           :camelize => true,
           :response_type => :xml,

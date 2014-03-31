@@ -7,6 +7,11 @@ module Eve
           request(:corp, :corporation_sheet, {:corporation_id => corporation_id}.optionalize)
         end
 
+        def contact_list
+          validate_credentials(:limited)
+          request(:corp, :contactlist)
+        end
+
         # limited API key
         def fac_war_stats
           validate_credentials :limited, :character_id
