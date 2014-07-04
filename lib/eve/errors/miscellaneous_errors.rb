@@ -30,6 +30,9 @@ module Eve
           return "904 - Your IP address has been temporarily blocked because it is causing too many errors. See the cacheUntil timestamp for when it will be opened again. IPs that continually cause a lot of errors in the API will be permanently banned, please take measures to minimize problematic API calls from your application."
         end
       end
+
+      # 999 - User forced test error condition.
+      class TestErrorForced < MiscellaneousError; end
     end
   end
 end
