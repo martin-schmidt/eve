@@ -83,6 +83,9 @@ module Eve
         212 => Eve::Errors::AuthenticationErrors::LastAuthenticationFailure,
         213 => Eve::Errors::AuthenticationErrors::MissingRoles,
         214 => Eve::Errors::AuthenticationErrors::NotInAlliance,
+        220 => Eve::Errors::AuthenticationErrors::InvalidCorporationKey,
+        221 => Eve::Errors::AuthenticationErrors::IllegalPageRequest,
+        222 => Eve::Errors::AuthenticationErrors::KeyExpired,
 
 
         '5xx' => Eve::Errors::InternalError,
@@ -120,6 +123,7 @@ module Eve
         901 => Eve::Errors::MiscellaneousErrors::SiteDatabaseDisabled,
         902 => Eve::Errors::MiscellaneousErrors::BackendDatabaseDisabled,
         903 => Eve::Errors::MiscellaneousErrors::RateLimited,
+        904 => Eve::Errors::MiscellaneousErrors::IPBanned,
         999 => Eve::Errors::MiscellaneousErrors::TestErrorForced,
       }
 

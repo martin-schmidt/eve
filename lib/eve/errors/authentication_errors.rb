@@ -28,6 +28,24 @@ module Eve
       class LoginDenied < AuthenticationError; end
       # 214 - Corporation is not part of alliance.
       class NotInAlliance < AuthenticationError; end
+      # 220 - Invalid Corporation Key
+      class InvalidCorporationKey < AuthenticationError
+        def message
+          return "220 - Invalid Corporation Key. Key owner does not fullfill role requirements anymore."
+        end
+      end
+      # 221 - Illegal page request! Please verify the access granted by the key you are using!
+      class IllegalPageRequest < AuthenticationError
+        def message
+          return "221 - Illegal page request! Please verify the access granted by the key you are using!"
+        end
+      end
+      # 222 - Key has expired.
+      class KeyExpired < AuthenticationError
+        def message
+          return "222 - Key has expired. Contact key owner for access renewal."
+        end
+      end
     end
   end
 end
